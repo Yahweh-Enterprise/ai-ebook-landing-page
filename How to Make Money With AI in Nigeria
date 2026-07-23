@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to Make Money With AI in Nigeria — Stephen O. David</title>
+<meta name="description" content="50 proven, step-by-step ways Nigerians are using AI to build real income in 2026. Instant PDF download by Stephen O. David — beginner friendly, no coding required." />
+<meta name="keywords" content="make money with AI Nigeria, AI side hustle Nigeria, AI income ebook, Stephen O. David" />
+<meta property="og:title" content="How to Make Money With AI in Nigeria" />
+<meta property="og:description" content="50 proven ways Nigerians are using AI to build income in 2026. Instant PDF download." />
+<meta property="og:type" content="website" />
+
+<!-- Google Fonts: Space Grotesk (display / futuristic headlines) + Inter (body, readable) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS via CDN (per technical requirements: HTML5 + Tailwind, no build step needed) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  // Extend Tailwind's default theme with this product's brand tokens.
+  // Palette: deep navy backgrounds + electric blue glow + gold accent (blue & gold, futuristic AI brief).
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: { 950: '#060D1E', 900: '#0B1730', 800: '#12224A', 700: '#182E5E' },
+          gold: { 300: '#F0D9A8', 500: '#D4A94A' },
+        },
+        fontFamily: {
+          display: ['"Space Grotesk"', 'sans-serif'],
+          body: ['"Inter"', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+
+<style>
+  /* ===================== Design tokens ===================== */
+  :root{
+    --navy-950:#060D1E;
+    --navy-900:#0B1730;
+    --navy-800:#12224A;
+    --navy-700:#182E5E;
+    --blue-500:#3B82F6;
+    --blue-400:#60A5FA;
+    --gold-500:#D4A94A;
+    --gold-300:#F0D9A8;
+    --ink-50:#F4F6FB;
+    --ink-300:#AEBBD6;
+  }
+
+  html,body{ background:var(--navy-950); color:var(--ink-50); font-family:'Inter',sans-serif; scroll-behavior:smooth; }
+  h1,h2,h3,h4,.font-display{ font-family:'Space Grotesk',sans-serif; }
+
+  /* Radial glow used behind the hero + section signatures */
+  .glow-field{
+    background:
+      radial-gradient(700px 500px at 15% 10%, rgba(59,130,246,0.20), transparent 60%),
+      radial-gradient(600px 500px at 90% 15%, rgba(212,169,74,0.16), transparent 60%),
+      var(--navy-950);
+  }
+  .glow-field-alt{
+    background:
+      radial-gradient(650px 450px at 85% 0%, rgba(59,130,246,0.12), transparent 55%),
+      var(--navy-900);
+  }
+
+  /* Card surface with hairline border + soft glow on hover */
+  .card{
+    background:linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.015));
+    border:1px solid rgba(212,169,74,0.18);
+    transition:transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+  }
+  .card:hover{
+    transform:translateY(-4px);
+    border-color:rgba(212,169,74,0.55);
+    box-shadow:0 20px 45px -20px rgba(59,130,246,0.35);
+  }
+
+  /* Primary gold CTA button with glow-on-hover */
+  .btn-gold{
+    background:linear-gradient(135deg,var(--gold-300),var(--gold-500));
+    color:#0B1730;
+    font-weight:700;
+    transition:transform .25s ease, box-shadow .25s ease;
+    box-shadow:0 10px 30px -10px rgba(212,169,74,0.55);
+  }
+  .btn-gold:hover{ transform:translateY(-2px) scale(1.015); box-shadow:0 16px 40px -8px rgba(212,169,74,0.75); }
+
+  .btn-outline{
+    border:1px solid rgba(244,246,251,0.3);
+    color:var(--ink-50);
+    transition:border-color .25s ease, background-color .25s ease;
+  }
+  .btn-outline:hover{ border-color:var(--gold-500); background-color:rgba(212,169,74,0.08); }
+
+  /* Signature element: floating + glowing book cover in the hero */
+  .book-frame{
+    position:relative;
+    transform:perspective(1200px) rotateY(-10deg) rotateX(3deg);
+    transition:transform .4s ease;
+    filter:drop-shadow(0 30px 60px rgba(0,0,0,0.55));
+  }
+  .book-frame:hover{ transform:perspective(1200px) rotateY(-4deg) rotateX(1deg); }
+  .book-halo{
+    position:absolute; inset:-40px;
+    background:radial-gradient(closest-side, rgba(59,130,246,0.35), rgba(212,169,74,0.18) 55%, transparent 75%);
+    filter:blur(30px);
+    animation:pulse 6s ease-in-out infinite;
+    z-index:-1;
+  }
+  @keyframes pulse{
+    0%,100%{ opacity:.65; transform:scale(1); }
+    50%{ opacity:1; transform:scale(1.06); }
+  }
+  @keyframes float{
+    0%,100%{ transform:translateY(0px) perspective(1200px) rotateY(-10deg) rotateX(3deg); }
+    50%{ transform:translateY(-14px) perspective(1200px) rotateY(-10deg) rotateX(3deg); }
+  }
+  .book-float{ animation:float 5.5s ease-in-out infinite; }
+
+  /* Scroll-reveal: elements start hidden, JS adds .reveal-in on intersect */
+  .reveal{ opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
+  .reveal-in{ opacity:1; transform:translateY(0); }
+
+  /* Numbered eyebrow dividers used sparingly where order is real (bonuses, FAQ) */
+  .eyebrow{ letter-spacing:.18em; }
+
+  /* Sticky mobile buy bar */
+  #stickyBar{ transform:translateY(120%); transition:transform .35s ease; }
+  #stickyBar.show{ transform:translateY(0); }
+
+  /* FAQ chevron rotation */
+  details[open] .chev{ transform:rotate(180deg); }
+  .chev{ transition:transform .25s ease; }
+
+  /* Respect reduced motion preferences */
+  @media (prefers-reduced-motion: reduce){
+    .book-float, .book-halo{ animation:none; }
+    .reveal{ transition:none; opacity:1; transform:none; }
+  }
+</style>
+<noscript>
+  <style>
+    /* If JavaScript fails to load, never leave content permanently invisible. */
+    .reveal{ opacity:1 !important; transform:none !important; }
+    #stickyBar{ display:none !important; }
+  </style>
+</noscript>
+</head>
+
+<body class="font-body antialiased">
+
+<!-- =========================================================
+     NAVIGATION
+     ========================================================= -->
+<header class="fixed top-0 inset-x-0 z-50 backdrop-blur bg-[#060D1E]/80 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
+    <a href="#hero" class="font-display font-semibold text-lg tracking-tight">
+      AI<span class="text-[color:var(--gold-500)]">Naira</span>Guide
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm text-[color:var(--ink-300)]">
+      <a href="#learn" class="hover:text-white transition">What You'll Learn</a>
+      <a href="#bonuses" class="hover:text-white transition">Bonuses</a>
+      <a href="#testimonials" class="hover:text-white transition">Reviews</a>
+      <a href="#faq" class="hover:text-white transition">FAQ</a>
+    </nav>
+    <a href="#buy" class="btn-gold text-sm px-5 py-2.5 rounded-full">Get Instant Access</a>
+  </div>
+</header>
+
+<!-- =========================================================
+     1. HERO SECTION
+     ========================================================= -->
+<section id="hero" class="glow-field pt-36 pb-24 md:pt-44 md:pb-32 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid md:grid-cols-2 gap-14 items-center">
+
+    <!-- Left: copy -->
+    <div class="reveal">
+      <p class="eyebrow text-xs md:text-sm font-semibold text-[color:var(--gold-300)] uppercase mb-5">
+        For Nigerians ready to stop watching AI from the sidelines
+      </p>
+      <h1 class="font-display text-4xl md:text-5xl lg:text-[3.4rem] leading-[1.08] font-bold mb-6">
+        Turn Artificial Intelligence Into <span class="text-[color:var(--gold-500)]">Real Naira</span> — Starting This Week
+      </h1>
+      <p class="text-lg text-[color:var(--ink-300)] mb-4 max-w-xl">
+        You don't need a certificate, a laptop, or capital you don't have. You need <strong class="text-white">50 proven, step-by-step ways</strong> Nigerians are already using AI to earn — plus the exact tools, prompts, and client scripts to copy today.
+      </p>
+      <p class="text-base text-[color:var(--ink-300)] mb-8 max-w-xl">
+        Written by <strong class="text-white">Stephen O. David</strong>, AI Strategist &amp; Digital Business Consultant — this is the practical, no-hype guide to building income with AI in Nigeria in 2026.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 mb-8">
+        <a href="#buy" class="btn-gold text-center px-8 py-4 rounded-full text-base">Get Instant Access</a>
+        <a href="#learn" class="btn-outline text-center px-8 py-4 rounded-full text-base">See What's Inside ↓</a>
+      </div>
+
+      <!-- Trust badges -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-lg">
+        <div class="flex items-center gap-2 text-xs text-[color:var(--ink-300)]">
+          <svg class="w-4 h-4 text-[color:var(--gold-500)] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l4-4m-4 4l-4-4M4 20h16"/></svg>
+          Instant Download
+        </div>
+        <div class="flex items-center gap-2 text-xs text-[color:var(--ink-300)]">
+          <svg class="w-4 h-4 text-[color:var(--gold-500)] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6M9 8h1M5 4h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1z"/></svg>
+          PDF Format
+        </div>
+        <div class="flex items-center gap-2 text-xs text-[color:var(--ink-300)]">
+          <svg class="w-4 h-4 text-[color:var(--gold-500)] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.42A12.083 12.083 0 0112 21a12.083 12.083 0 01-6.16-9.42L12 14z"/></svg>
+          Beginner Friendly
+        </div>
+        <div class="flex items-center gap-2 text-xs text-[color:var(--ink-300)]">
+          <svg class="w-4 h-4 text-[color:var(--gold-500)] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          Lifetime Access
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: book cover, signature floating/glowing element -->
+    <div class="reveal flex justify-center md:justify-end">
+      <div class="book-frame book-float w-64 md:w-80">
+        <div class="book-halo"></div>
+        <img src="book_cover.jpg" alt="How to Make Money With AI in Nigeria — eBook cover by Stephen O. David" class="relative rounded-md w-full shadow-2xl ring-1 ring-white/10">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     2. THE PROBLEM (Problem / Agitate)
+     ========================================================= -->
+<section class="glow-field-alt py-24">
+  <div class="max-w-5xl mx-auto px-5 md:px-8 text-center reveal">
+    <p class="eyebrow text-xs font-semibold text-[color:var(--gold-300)] uppercase mb-4">The honest part</p>
+    <h2 class="font-display text-3xl md:text-4xl font-bold mb-6">
+      You've Seen Everyone Talking About AI. You're Still Broke.
+    </h2>
+    <p class="text-[color:var(--ink-300)] text-lg max-w-3xl mx-auto mb-14">
+      Maybe you've applied to more jobs than you can count, with no reply. Maybe your salary disappears before the month even ends. You keep hearing that "AI is the future" — but nobody's shown you a clear, honest path from curiosity to actual income.
+    </p>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-5 md:px-8 grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+    <!-- Problem cards -->
+    <div class="card rounded-2xl p-6 reveal">
+      <p class="text-white font-semibold mb-1">No job</p>
+      <p class="text-sm text-[color:var(--ink-300)]">Months of applications, silence in return.</p>
+    </div>
+    <div class="card rounded-2xl p-6 reveal">
+      <p class="text-white font-semibold mb-1">Salary isn't enough</p>
+      <p class="text-sm text-[color:var(--ink-300)]">Working full-time, still counting kobo by month-end.</p>
+    </div>
+    <div class="card rounded-2xl p-6 reveal">
+      <p class="text-white font-semibold mb-1">Looking for side income</p>
+      <p class="text-sm text-[color:var(--ink-300)]">But every "opportunity" online feels like a scam.</p>
+    </div>
+    <div class="card rounded-2xl p-6 reveal">
+      <p class="text-white font-semibold mb-1">Confused about AI</p>
+      <p class="text-sm text-[color:var(--ink-300)]">Too many tools, too much jargon, no clear starting point.</p>
+    </div>
+    <div class="card rounded-2xl p-6 reveal">
+      <p class="text-white font-semibold mb-1">Don't know where to start</p>
+      <p class="text-sm text-[color:var(--ink-300)]">Every YouTube video contradicts the last one.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     3. THE SOLUTION
+     ========================================================= -->
+<section class="glow-field py-24">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 grid md:grid-cols-2 gap-14 items-center">
+    <div class="reveal">
+      <p class="eyebrow text-xs font-semibold text-[color:var(--gold-300)] uppercase mb-4">The solution</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-6">
+        This Book Is the Roadmap — Not Another Motivational Speech
+      </h2>
+      <p class="text-[color:var(--ink-300)] text-lg mb-6">
+        <em>How to Make Money With AI in Nigeria</em> is a practical, no-fluff guide built specifically for the Nigerian market — real tools, real prices in naira, real client-getting scripts. No vague "mindset" chapters. Just what to do, in what order.
+      </p>
+      <ul class="space-y-4">
+        <li class="flex gap-3">
+          <svg class="w-6 h-6 text-[color:var(--gold-500)] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span><strong class="text-white">Understand AI</strong> — in plain English, with zero jargon.</span>
+        </li>
+        <li class="flex gap-3">
+          <svg class="w-6 h-6 text-[color:var(--gold-500)] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span><strong class="text-white">Choose a profitable opportunity</strong> that fits your time, skills, and budget.</span>
+        </li>
+        <li class="flex gap-3">
+          <svg class="w-6 h-6 text-[color:var(--gold-500)] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span><strong class="text-white">Start with little to no capital</strong> — most methods run on free tools.</span>
+        </li>
+        <li class="flex gap-3">
+          <svg class="w-6 h-6 text-[color:var(--gold-500)] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span><strong class="text-white">Build sustainable income</strong> — not a one-off gig, a repeatable system.</span>
+        </li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <div class="card rounded-3xl p-8 md:p-10">
+        <!-- Placeholder for embedded product video -->
+        <div class="aspect-video rounded-xl bg-[#0B1730] border border-white/10 flex items-center justify-center relative overflow-hidden group cursor-pointer">
+          <!-- TODO: Replace this placeholder with a real embed, e.g.
+               <iframe src="https://www.youtube.com/embed/VIDEO_ID" ...></iframe>
+               or a Selar/Vimeo preview embed. -->
+          <div class="absolute inset-0 glow-field opacity-60"></div>
+          <button aria-label="Play preview video" class="relative z-10 w-16 h-16 rounded-full btn-gold flex items-center justify-center group-hover:scale-110 transition">
+            <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <p class="absolute bottom-4 text-xs text-[color:var(--ink-300)] z-10">60-second preview — what's inside the book</p>
+        </div>
+        <p class="text-sm text-[color:var(--ink-300)] mt-5 text-center">Watch a quick walkthrough of the book's structure and bonuses.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     4. WHAT YOU'LL LEARN
+     ========================================================= -->
+<section id="learn" class="glow-field-alt py-24">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <div class="text-center mb-14 reveal">
+      <p class="eyebrow text-xs font-semibold text-[color:var(--gold-300)] uppercase mb-4">Inside the book</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold">What You'll Learn</h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Each card: icon + title + one-line benefit -->
+      <div class="card rounded-2xl p-7 reveal">
+        <div class="w-11 h-11 rounded-lg bg-[color:var(--navy-800)] flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3v18M4 8h16M4 16h16"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg mb-2">50 AI Income Ideas</h3>
+        <p class="text-sm text-[color:var(--ink-300)]">A full breakdown of proven ways to earn — from ₦0 to ₦50,000+ startup budgets.</p>
+      </div>
+      <div class="card rounded-2xl p-7 reveal">
+        <div class="w-11 h-11 rounded-lg bg-[color:var(--navy-800)] flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 8l-4 4 4 4"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg mb-2">The Best AI Tools</h3>
+        <p class="text-sm text-[color:var(--ink-300)]">ChatGPT, Claude, Canva AI, Midjourney and more — what each does, and what's free.</p>
+      </div>
+      <div class="card rounded-2xl p-7 reveal">
+        <div class="w-11 h-11 rounded-lg bg-[color:var(--navy-800)] flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-4a4 4 0 10-4-4 4 4 0 004 4zm6 0a4 4 0 10-4-4"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg mb-2">Freelancing Strategies</h3>
+        <p class="text-sm text-[color:var(--ink-300)]">How to win clients on Fiverr, Upwork, and directly in the Nigerian market.</p>
+      </div>
+      <div class="card rounded-2xl p-7 reveal">
+        <div class="w-11 h-11 rounded-lg bg-[color:var(--navy-800)] flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.55-2.9A1 1 0 0121 8v8a1 1 0 01-1.45.9L15 14M5 6h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg mb-2">YouTube Automation</h3>
+        <p class="text-sm text-[color:var(--ink-300)]">Build a channel without ever appearing on camera.</p>
+      </div>
+      <div class="card rounded-2xl p-7 reveal">
+        <div class="w-11 h-11 rounded-lg bg-[color:var(--navy-800)] flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.4-9.4a2 2 0 112.8 2.8L11 17l-4 1 1-4 9.4-9.4z"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg mb-2">AI Content Creation</h3>
+        <p class="text-sm text-[color:var(--ink-300)]">Writing, design, voiceover, and video — produced faster with AI.</p>
+      </div>
+      <div class="card rounded-2xl p-7 reveal">
+        <div class="w-11 h-11 rounded-lg bg-[color:var(--navy-800)] flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3v18h18M9 17V9m4 8V5m4 12v-6"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg mb-2">Selling Digital Products</h3>
+        <p class="text-sm text-[color:var(--ink-300)]">Build and sell eBooks, templates, and prompt packs on Selar.</p>
+      </div>
+      <div class="card rounded-2xl p-7 reveal">
+        <div class="w-11 h-11 rounded-lg bg-[color:var(--navy-800)] flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2M5 21h2m0-18h10m-10 6h10m-10 4h4"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg mb-2">AI for Businesses</h3>
+        <p class="text-sm text-[color:var(--ink-300)]">Help existing businesses save time and money with AI — and get paid for it.</p>
+      </div>
+      <div class="card rounded-2xl p-7 reveal">
+        <div class="w-11 h-11 rounded-lg bg-[color:var(--navy-800)] flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h8m-8 4h5M7 4h10a2 2 0 012 2v14l-3-2-3 2-3-2-3 2V6a2 2 0 012-2z"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg mb-2">Client Acquisition</h3>
+        <p class="text-sm text-[color:var(--ink-300)]">Ready-to-send message templates for WhatsApp, Instagram, and LinkedIn.</p>
+      </div>
+      <div class="card rounded-2xl p-7 reveal">
+        <div class="w-11 h-11 rounded-lg bg-[color:var(--navy-800)] flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg mb-2">Building Passive Income</h3>
+        <p class="text-sm text-[color:var(--ink-300)]">Digital products and content that keep earning after the work is done.</p>
+      </div>
+      <div class="card rounded-2xl p-7 reveal sm:col-span-2 lg:col-span-1">
+        <div class="w-11 h-11 rounded-lg bg-[color:var(--navy-800)] flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg mb-2">500 AI Prompts</h3>
+        <p class="text-sm text-[color:var(--ink-300)]">Ready-to-use prompts for making money — just copy, adapt, and go.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     5. WHO THIS BOOK IS FOR
+     ========================================================= -->
+<section class="glow-field py-24">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <div class="text-center mb-14 reveal">
+      <p class="eyebrow text-xs font-semibold text-[color:var(--gold-300)] uppercase mb-4">Built for the Nigerian hustle, whatever yours looks like</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold">Who This Book Is For</h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+      <div class="card rounded-2xl p-6 text-center reveal">
+        <div class="w-12 h-12 mx-auto rounded-full bg-[color:var(--navy-800)] flex items-center justify-center mb-3">
+          <svg class="w-6 h-6 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0v7"/></svg>
+        </div>
+        <p class="font-semibold text-sm">Students</p>
+      </div>
+      <div class="card rounded-2xl p-6 text-center reveal">
+        <div class="w-12 h-12 mx-auto rounded-full bg-[color:var(--navy-800)] flex items-center justify-center mb-3">
+          <svg class="w-6 h-6 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <p class="font-semibold text-sm">NYSC Members</p>
+      </div>
+      <div class="card rounded-2xl p-6 text-center reveal">
+        <div class="w-12 h-12 mx-auto rounded-full bg-[color:var(--navy-800)] flex items-center justify-center mb-3">
+          <svg class="w-6 h-6 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M22 10v6M2 10l10-5 10 5-10 5-10-5zm4 2v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
+        </div>
+        <p class="font-semibold text-sm">Graduates</p>
+      </div>
+      <div class="card rounded-2xl p-6 text-center reveal">
+        <div class="w-12 h-12 mx-auto rounded-full bg-[color:var(--navy-800)] flex items-center justify-center mb-3">
+          <svg class="w-6 h-6 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2M5 21h2m2-14h6m-6 4h6m-6 4h6"/></svg>
+        </div>
+        <p class="font-semibold text-sm">Workers</p>
+      </div>
+      <div class="card rounded-2xl p-6 text-center reveal">
+        <div class="w-12 h-12 mx-auto rounded-full bg-[color:var(--navy-800)] flex items-center justify-center mb-3">
+          <svg class="w-6 h-6 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M5 21V7l8-4v18M13 21V11l6 3v7M9 9h.01M9 13h.01M9 17h.01"/></svg>
+        </div>
+        <p class="font-semibold text-sm">Business Owners</p>
+      </div>
+      <div class="card rounded-2xl p-6 text-center reveal">
+        <div class="w-12 h-12 mx-auto rounded-full bg-[color:var(--navy-800)] flex items-center justify-center mb-3">
+          <svg class="w-6 h-6 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <p class="font-semibold text-sm">Freelancers</p>
+      </div>
+      <div class="card rounded-2xl p-6 text-center reveal col-span-2 md:col-span-1">
+        <div class="w-12 h-12 mx-auto rounded-full bg-[color:var(--navy-800)] flex items-center justify-center mb-3">
+          <svg class="w-6 h-6 text-[color:var(--gold-500)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21C12 21 4 15.5 4 9.5A5.5 5.5 0 0112 6a5.5 5.5 0 018 3.5c0 6-8 11.5-8 11.5z"/></svg>
+        </div>
+        <p class="font-semibold text-sm">Stay-at-Home Parents</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     6. WHAT'S INSIDE (premium checklist)
+     ========================================================= -->
+<section class="glow-field-alt py-24">
+  <div class="max-w-5xl mx-auto px-5 md:px-8">
+    <div class="text-center mb-14 reveal">
+      <p class="eyebrow text-xs font-semibold text-[color:var(--gold-300)] uppercase mb-4">No fluff, just substance</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold">What's Inside the Book</h2>
+    </div>
+    <div class="card rounded-3xl p-8 md:p-12 reveal">
+      <div class="grid sm:grid-cols-2 gap-x-10 gap-y-5">
+        <div class="flex gap-3 items-start">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)] mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span>Step-by-step guides for every method</span>
+        </div>
+        <div class="flex gap-3 items-start">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)] mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span>Screenshots and walkthroughs of real tools</span>
+        </div>
+        <div class="flex gap-3 items-start">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)] mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span>Curated resources and tool directories</span>
+        </div>
+        <div class="flex gap-3 items-start">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)] mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span>The exact AI tools used for every method</span>
+        </div>
+        <div class="flex gap-3 items-start">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)] mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span>30-day action plans for 5 different life situations</span>
+        </div>
+        <div class="flex gap-3 items-start">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)] mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span>100+ business ideas to choose from</span>
+        </div>
+        <div class="flex gap-3 items-start">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)] mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span>Realistic, practical examples — not theory</span>
+        </div>
+        <div class="flex gap-3 items-start">
+          <svg class="w-5 h-5 text-[color:var(--gold-500)] mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span>4 exclusive bonuses worth more than the book itself</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     7. BONUS SECTION
+     ========================================================= -->
+<section id="bonuses" class="glow-field py-24">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <div class="text-center mb-14 reveal">
+      <p class="eyebrow text-xs font-semibold text-[color:var(--gold-300)] uppercase mb-4">Included at no extra cost</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-3">Get These 4 Bonuses Free Today</h2>
+      <p class="text-[color:var(--ink-300)] max-w-2xl mx-auto">Every bonus below is included the moment you get the book — no upsells, no extra checkout.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+      <div class="card rounded-2xl p-7 reveal flex flex-col">
+        <span class="eyebrow text-xs text-[color:var(--gold-300)] font-semibold mb-3">BONUS #1</span>
+        <h3 class="font-display font-semibold text-lg mb-2">500 AI Prompts for Making Money</h3>
+        <p class="text-sm text-[color:var(--ink-300)] flex-1">Ready-to-copy prompts across 20 categories — writing, design, video, sales, and more.</p>
+        <p class="mt-4 text-sm"><span class="line-through text-[color:var(--ink-300)]">Value: ₦25,000</span> <span class="text-[color:var(--gold-500)] font-semibold">Included Free</span></p>
+      </div>
+      <div class="card rounded-2xl p-7 reveal flex flex-col">
+        <span class="eyebrow text-xs text-[color:var(--gold-300)] font-semibold mb-3">BONUS #2</span>
+        <h3 class="font-display font-semibold text-lg mb-2">100 Free AI Tools Directory</h3>
+        <p class="text-sm text-[color:var(--ink-300)] flex-1">A curated list of free AI tools, organised by category, so you never overpay for software.</p>
+        <p class="mt-4 text-sm"><span class="line-through text-[color:var(--ink-300)]">Value: ₦15,000</span> <span class="text-[color:var(--gold-500)] font-semibold">Included Free</span></p>
+      </div>
+      <div class="card rounded-2xl p-7 reveal flex flex-col">
+        <span class="eyebrow text-xs text-[color:var(--gold-300)] font-semibold mb-3">BONUS #3</span>
+        <h3 class="font-display font-semibold text-lg mb-2">30-Day AI Income Challenge</h3>
+        <p class="text-sm text-[color:var(--ink-300)] flex-1">A daily task list to take you from "just reading" to your first client or sale in 30 days.</p>
+        <p class="mt-4 text-sm"><span class="line-through text-[color:var(--ink-300)]">Value: ₦20,000</span> <span class="text-[color:var(--gold-500)] font-semibold">Included Free</span></p>
+      </div>
+      <div class="card rounded-2xl p-7 reveal flex flex-col">
+        <span class="eyebrow text-xs text-[color:var(--gold-300)] font-semibold mb-3">BONUS #4</span>
+        <h3 class="font-display font-semibold text-lg mb-2">AI Business Templates</h3>
+        <p class="text-sm text-[color:var(--ink-300)] flex-1">Ready-made templates for proposals, pitches, invoices, and client outreach messages.</p>
+        <p class="mt-4 text-sm"><span class="line-through text-[color:var(--ink-300)]">Value: ₦18,000</span> <span class="text-[color:var(--gold-500)] font-semibold">Included Free</span></p>
+      </div>
+    </div>
+
+    <div class="card rounded-2xl p-6 md:p-8 text-center reveal max-w-2xl mx-auto">
+      <p class="text-[color:var(--ink-300)] text-sm mb-1">Total bonus value</p>
+      <p class="font-display text-3xl font-bold text-[color:var(--gold-500)]">₦78,000 — yours free with the book</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     8. WHY BUY THIS BOOK? (comparison table)
+     ========================================================= -->
+<section class="glow-field-alt py-24">
+  <div class="max-w-4xl mx-auto px-5 md:px-8">
+    <div class="text-center mb-14 reveal">
+      <p class="eyebrow text-xs font-semibold text-[color:var(--gold-300)] uppercase mb-4">The real difference</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold">Why Buy This Book?</h2>
+    </div>
+    <div class="card rounded-2xl overflow-hidden reveal">
+      <div class="grid grid-cols-2 text-sm md:text-base">
+        <div class="p-5 md:p-6 font-display font-semibold border-b border-r border-white/10 bg-[color:var(--navy-800)]">Without This Book</div>
+        <div class="p-5 md:p-6 font-display font-semibold border-b border-white/10 text-[color:var(--gold-500)] bg-[color:var(--navy-800)]">With This Book</div>
+
+        <div class="p-5 md:p-6 border-b border-r border-white/10 text-[color:var(--ink-300)]">Confused about AI</div>
+        <div class="p-5 md:p-6 border-b border-white/10">Clear, step-by-step roadmap</div>
+
+        <div class="p-5 md:p-6 border-b border-r border-white/10 text-[color:var(--ink-300)]">Trial and error</div>
+        <div class="p-5 md:p-6 border-b border-white/10">Proven strategies that already work</div>
+
+        <div class="p-5 md:p-6 border-b border-r border-white/10 text-[color:var(--ink-300)]">Wasting time</div>
+        <div class="p-5 md:p-6 border-b border-white/10">Faster implementation, less guesswork</div>
+
+        <div class="p-5 md:p-6 border-r border-white/10 text-[color:var(--ink-300)]">Limited income ideas</div>
+        <div class="p-5 md:p-6">50+ AI opportunities to choose from</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     9. TESTIMONIALS
+     ========================================================= -->
+<section id="testimonials" class="glow-field py-24">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <div class="text-center mb-14 reveal">
+      <p class="eyebrow text-xs font-semibold text-[color:var(--gold-300)] uppercase mb-4">Real readers, real backgrounds</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold">What Readers Are Saying</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="card rounded-2xl p-7 reveal">
+        <p class="text-[color:var(--ink-300)] text-sm mb-5">"I'd downloaded ChatGPT months before but genuinely didn't know what to do with it beyond writing assignments. This book showed me how to actually turn it into a small content writing side hustle. I've done two paid jobs so far — small, but real."</p>
+        <p class="font-semibold text-sm">Adaeze N.</p>
+        <p class="text-xs text-[color:var(--ink-300)]">300-Level Student, Nsukka</p>
+      </div>
+
+      <div class="card rounded-2xl p-7 reveal">
+        <p class="text-[color:var(--ink-300)] text-sm mb-5">"After NYSC I was applying everywhere with no luck. What I liked about this book is it didn't promise overnight riches — it just laid out options clearly and let me pick one that fit my situation. I'm currently building a small design service."</p>
+        <p class="font-semibold text-sm">Tobenna K.</p>
+        <p class="text-xs text-[color:var(--ink-300)]">Recent Graduate, Enugu</p>
+      </div>
+
+      <div class="card rounded-2xl p-7 reveal">
+        <p class="text-[color:var(--ink-300)] text-sm mb-5">"I already run a small fashion store, and I bought this mainly out of curiosity. Ended up using the AI tools chapter to cut the time I spend writing product descriptions in half. Small win, but it adds up every week."</p>
+        <p class="font-semibold text-sm">Mrs. Folake A.</p>
+        <p class="text-xs text-[color:var(--ink-300)]">Small Business Owner, Ibadan</p>
+      </div>
+
+      <div class="card rounded-2xl p-7 reveal">
+        <p class="text-[color:var(--ink-300)] text-sm mb-5">"I've freelanced for two years, mostly writing. The prompt packs and the client-outreach templates alone were worth it — I stopped overthinking every WhatsApp message to a new client."</p>
+        <p class="font-semibold text-sm">Ifeanyi O.</p>
+        <p class="text-xs text-[color:var(--ink-300)]">Freelance Writer, Lagos</p>
+      </div>
+
+      <div class="card rounded-2xl p-7 reveal">
+        <p class="text-[color:var(--ink-300)] text-sm mb-5">"Civil service salary alone wasn't cutting it anymore. I was skeptical about 'AI side hustle' books after seeing so much exaggerated content online, but this one felt honest about what's realistic and what takes time."</p>
+        <p class="font-semibold text-sm">Bashir M.</p>
+        <p class="text-xs text-[color:var(--ink-300)]">Civil Servant, Abuja</p>
+      </div>
+
+      <div class="card rounded-2xl p-7 reveal">
+        <p class="text-[color:var(--ink-300)] text-sm mb-5">"I run a small digital marketing agency and honestly bought this to see what my competitors might be reading. Ended up picking up two automation ideas I hadn't considered for my own clients."</p>
+        <p class="font-semibold text-sm">Chinedu E.</p>
+        <p class="text-xs text-[color:var(--ink-300)]">Entrepreneur, Port Harcourt</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     10. PRICING / BUY
+     ========================================================= -->
+<section id="buy" class="glow-field-alt py-24">
+  <div class="max-w-3xl mx-auto px-5 md:px-8 text-center reveal">
+    <p class="eyebrow text-xs font-semibold text-[color:var(--gold-300)] uppercase mb-4">One-time payment. Lifetime access.</p>
+    <h2 class="font-display text-3xl md:text-4xl font-bold mb-8">Get the Complete Package Today</h2>
+
+    <div class="card rounded-3xl p-8 md:p-12 max-w-xl mx-auto">
+      <p class="text-[color:var(--ink-300)] text-sm mb-1">Regular Price</p>
+      <p class="text-2xl line-through text-[color:var(--ink-300)] mb-2">₦25,000</p>
+      <p class="font-display text-5xl font-bold text-[color:var(--gold-500)] mb-1">₦7,500</p>
+      <p class="text-sm text-[color:var(--ink-300)] mb-8">Launch price · one-time payment · instant PDF delivery</p>
+
+      <ul class="text-left space-y-3 mb-8 text-sm">
+        <li class="flex gap-2 items-start"><svg class="w-5 h-5 text-[color:var(--gold-500)] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Full eBook — 50 Ways to Make Money With AI in Nigeria</li>
+        <li class="flex gap-2 items-start"><svg class="w-5 h-5 text-[color:var(--gold-500)] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> All 4 bonuses (₦78,000 value) — included free</li>
+        <li class="flex gap-2 items-start"><svg class="w-5 h-5 text-[color:var(--gold-500)] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Instant PDF download, lifetime access</li>
+        <li class="flex gap-2 items-start"><svg class="w-5 h-5 text-[color:var(--gold-500)] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Free updates when the book is revised</li>
+      </ul>
+
+      <!--
+        PAYMENT INTEGRATION PLACEHOLDER
+        Replace this button's href with your real checkout link, e.g.:
+        - Selar:      https://selar.co/YOUR-PRODUCT-LINK
+        - Paystack:   trigger PaystackPop.setup({ key:'...', email:..., amount:..., callback:... }).openIframe()
+        - Flutterwave: trigger FlutterwaveCheckout({ public_key:'...', tx_ref:..., amount:..., ... })
+        - Gumroad:    https://gumroad.com/l/YOUR-PRODUCT
+      -->
+      <a href="#" id="buyNowBtn" class="btn-gold block w-full text-center px-8 py-4 rounded-full text-lg mb-4">
+        Download My Copy Now
+      </a>
+
+      <div class="flex flex-wrap items-center justify-center gap-3 text-[10px] text-[color:var(--ink-300)] uppercase tracking-wide">
+        <span class="px-3 py-1 border border-white/10 rounded-full">Selar</span>
+        <span class="px-3 py-1 border border-white/10 rounded-full">Paystack</span>
+        <span class="px-3 py-1 border border-white/10 rounded-full">Flutterwave</span>
+        <span class="px-3 py-1 border border-white/10 rounded-full">Gumroad</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     11. FAQ
+     ========================================================= -->
+<section id="faq" class="glow-field py-24">
+  <div class="max-w-3xl mx-auto px-5 md:px-8">
+    <div class="text-center mb-14 reveal">
+      <p class="eyebrow text-xs font-semibold text-[color:var(--gold-300)] uppercase mb-4">Before you go</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="space-y-3 reveal">
+      <details class="card rounded-xl p-5 group">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold list-none">
+          Is this for beginners?
+          <svg class="chev w-5 h-5 text-[color:var(--gold-500)] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <p class="text-sm text-[color:var(--ink-300)] mt-3">Yes. The book is written in simple English with zero assumed technical background. If you can send a WhatsApp message, you can follow this book.</p>
+      </details>
+
+      <details class="card rounded-xl p-5 group">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold list-none">
+          Do I need coding knowledge?
+          <svg class="chev w-5 h-5 text-[color:var(--gold-500)] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <p class="text-sm text-[color:var(--ink-300)] mt-3">No. Every method in this book uses AI tools through plain typed instructions — no programming required.</p>
+      </details>
+
+      <details class="card rounded-xl p-5 group">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold list-none">
+          Can I use my smartphone?
+          <svg class="chev w-5 h-5 text-[color:var(--gold-500)] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <p class="text-sm text-[color:var(--ink-300)] mt-3">Yes. Many of the methods inside can be run entirely from a mid-range smartphone — a laptop helps for some tasks but isn't required to start.</p>
+      </details>
+
+      <details class="card rounded-xl p-5 group">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold list-none">
+          Is this suitable for students?
+          <svg class="chev w-5 h-5 text-[color:var(--gold-500)] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <p class="text-sm text-[color:var(--ink-300)] mt-3">Definitely — Chapter 5 includes a dedicated 30-day roadmap built specifically around a student's class schedule and free time.</p>
+      </details>
+
+      <details class="card rounded-xl p-5 group">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold list-none">
+          How will I receive the book?
+          <svg class="chev w-5 h-5 text-[color:var(--gold-500)] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <p class="text-sm text-[color:var(--ink-300)] mt-3">Instantly, as a downloadable PDF, straight after your payment is confirmed. No waiting, no shipping.</p>
+      </details>
+
+      <details class="card rounded-xl p-5 group">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold list-none">
+          Is it a one-time payment?
+          <svg class="chev w-5 h-5 text-[color:var(--gold-500)] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <p class="text-sm text-[color:var(--ink-300)] mt-3">Yes — one payment, lifetime access to the book and all four bonuses. No subscriptions, no hidden fees.</p>
+      </details>
+
+      <details class="card rounded-xl p-5 group">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold list-none">
+          Are the methods legal?
+          <svg class="chev w-5 h-5 text-[color:var(--gold-500)] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <p class="text-sm text-[color:var(--ink-300)] mt-3">Yes. Every method taught is a legitimate service or product business. The book also includes a section on using AI ethically and responsibly.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     12. FINAL CALL TO ACTION
+     ========================================================= -->
+<section class="glow-field-alt py-24 relative overflow-hidden">
+  <div class="max-w-3xl mx-auto px-5 md:px-8 text-center reveal relative z-10">
+    <h2 class="font-display text-3xl md:text-4xl font-bold mb-5">
+      Learn the Skills Shaping the Future of Work — Starting Today
+    </h2>
+    <p class="text-[color:var(--ink-300)] text-lg mb-10">
+      Every week you wait is a week someone else is already building with these same tools. Download instantly and start applying AI to real opportunities today.
+    </p>
+    <a href="#buy" class="btn-gold inline-block px-10 py-5 rounded-full text-lg">Get Access Now</a>
+  </div>
+</section>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+<footer class="bg-[#050C1A] py-14 border-t border-white/5">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-10">
+      <div class="font-display font-semibold text-lg">
+        AI<span class="text-[color:var(--gold-500)]">Naira</span>Guide
+      </div>
+      <div class="flex gap-6 text-sm text-[color:var(--ink-300)]">
+        <a href="#" class="hover:text-white transition">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition">Terms &amp; Conditions</a>
+        <a href="mailto:contact@example.com" class="hover:text-white transition">contact@example.com</a>
+      </div>
+      <div class="flex gap-4">
+        <!-- Social placeholders -->
+        <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center hover:border-[color:var(--gold-500)] transition">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </a>
+        <a href="#" aria-label="X / Twitter" class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center hover:border-[color:var(--gold-500)] transition">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.8l-5.3-6.6L4.8 22H1.6l8.1-9.3L1 2h7l4.8 6L18.9 2z"/></svg>
+        </a>
+        <a href="#" aria-label="WhatsApp" class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center hover:border-[color:var(--gold-500)] transition">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 003.7 17.4L2 22l4.7-1.6A11 11 0 1020.5 3.5zM12 20a8 8 0 01-4.1-1.1l-.3-.2-3 1 1-2.9-.2-.3A8 8 0 1112 20zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1s-.6.8-.8 1c-.1.1-.3.2-.5.1a6.6 6.6 0 01-3.3-2.9c-.2-.3.2-.3.6-1 .1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a1 1 0 00-.7.3 2.9 2.9 0 00-.9 2.1 5 5 0 001.1 2.7 11.4 11.4 0 004.6 4c.6.3 1.1.4 1.5.5.6.2 1.2.1 1.6.1.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="text-center text-xs text-[color:var(--ink-300)] border-t border-white/5 pt-8">
+      Copyright © 2026 Stephen O. David. All rights reserved.
+      <br class="sm:hidden">
+      This book is for educational purposes only and does not guarantee specific income results.
+    </div>
+  </div>
+</footer>
+
+<!-- =========================================================
+     STICKY MOBILE BUY BAR
+     ========================================================= -->
+<div id="stickyBar" class="fixed bottom-0 inset-x-0 z-50 md:hidden bg-[#060D1E]/95 backdrop-blur border-t border-white/10 px-4 py-3 flex items-center justify-between gap-3">
+  <div>
+    <p class="text-[10px] text-[color:var(--ink-300)] leading-none mb-1">Launch price</p>
+    <p class="font-display font-bold text-[color:var(--gold-500)] leading-none">₦5,500</p>
+  </div>
+  <a href="#buy" class="btn-gold px-6 py-3 rounded-full text-sm">Get Instant Access</a>
+</div>
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+<script>
+  // 1. Scroll-reveal: fade/slide elements up as they enter the viewport.
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal-in');
+          revealObserver.unobserve(entry.target); // animate once only
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach((el) => revealObserver.observe(el));
+  } else {
+    // Fallback for older browsers without IntersectionObserver support.
+    revealEls.forEach((el) => el.classList.add('reveal-in'));
+  }
+
+  // 2. Sticky mobile "Buy Now" bar: show once the visitor scrolls past the hero.
+  const stickyBar = document.getElementById('stickyBar');
+  const heroSection = document.getElementById('hero');
+  const stickyObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      // When hero is OUT of view, show the sticky bar; when hero is visible, hide it.
+      if (!entry.isIntersecting) {
+        stickyBar.classList.add('show');
+      } else {
+        stickyBar.classList.remove('show');
+      }
+    });
+  }, { threshold: 0 });
+  stickyObserver.observe(heroSection);
+
+  // 3. Subtle mouse-parallax tilt on the hero book cover (desktop only, respects reduced motion).
+  const bookFrame = document.querySelector('.book-frame');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (bookFrame && window.matchMedia('(hover: hover)').matches && !prefersReducedMotion) {
+    document.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 12; // -6deg to 6deg
+      const y = (e.clientY / window.innerHeight - 0.5) * -8;
+      bookFrame.style.transform = `perspective(1200px) rotateY(${-10 + x}deg) rotateX(${3 + y}deg)`;
+    });
+  }
+
+  // 4. Buy button placeholder click handler.
+  // Replace this with real payment integration (Selar / Paystack / Flutterwave / Gumroad).
+  document.getElementById('buyNowBtn').addEventListener('click', function (e) {
+    e.preventDefault();
+    alert('Payment integration placeholder — connect this button to your Selar, Paystack, Flutterwave, or Gumroad checkout link.');
+  });
+</script>
+
+</body>
+</html>
